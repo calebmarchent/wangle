@@ -134,8 +134,8 @@ target_include_directories(
     ${DOUBLE_CONVERSION_INCLUDE_DIRS}
 )
 target_link_libraries(wangle PUBLIC
-  ${FOLLY_LIBRARIES}
-  ${FIZZ_LIBRARIES}
+  Folly::folly_pic
+  fizz::fizz
   ${Boost_LIBRARIES}
   ${OPENSSL_LIBRARIES}
   ${GLOG_LIBRARIES}
